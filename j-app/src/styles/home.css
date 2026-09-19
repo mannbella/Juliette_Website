@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+.headshot-container {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+  padding: 2rem 1.5rem; 
+  gap: 2rem;
+  min-height: auto;
+}
+
+.headshot-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.status-tag {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #AA336A;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.status-tag .line {
+  width: 30px;
+  height: 2px;
+  background-color: #2038ae;
+}
+
+.headshot-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+}
+
+.headshot-content h1 span {
+  border-bottom: 4px solid #2038ae;
+  display: inline-block;
+  line-height: 0.9;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.about-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin: 0 0 1rem 0;
+  color: #AA336A;
+}
+
+.about-subtitle {
+  font-size: 1.rem;
+  color: #AA336A;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.badge {
+  padding: 6px 14px;
+  border: 1px solid #2038ae;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #555;
+  background: white;
+}
+
+.badge-large {
+  padding: 5px 10px;
+  border: 1px solid #2038ae;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #555;
+  background: white;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #2038ae;
+  background: white;
+  color: #333;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f5f5f5;
+}
+
+.btn.primary {
+  background-color: #2038ae;
+  color: white;
+  border: none;
+}
+
+.btn.primary:hover {
+  background-color: #2d4ef3;
+}
+
+.btn.secondary:hover {
+  background-color: #2d4ef3;
+}
+
+.wrapper h1 {
+  position: relative !important;
+  justify-content: right;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.floating-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+.card-top-left {
+  top: 20%;
+  left: -10%;
+}
+
+.card-bottom-center {
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-right {
+  top: 50%;
+  right: -5%;
+  transform: translateY(-50%);
+}
+
+.floating-card span {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.floating-card strong {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.timeline-box {
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--fallback-bc, oklch(var(--bc)/0.1));
+}
+
+.timeline hr {
+    background-color: var(--fallback-bc, oklch(var(--bc)/0.2));
+    height:2px;
+}
+
+.timeline-middle {
+  flex-shrink: 0;
+}
+
+@keyframes woosh-in {
+  0% {
+    transform: translateX(-150px) skewX(-25deg);
+    opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    transform: translateX(0) skewX(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.animate-woosh {
+  display: inline-block;
+  animation: woosh-in 0.6s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+}
+
+.hover-woosh {
+  display: inline-block;
+  transition: all 0.2s cubic-bezier(0.1, 0.9, 0.2, 1); 
+}
+
+.hover-woosh:hover {
+  transform: translateX(15px) skewX(-15deg); 
+  filter: blur(1px); 
+}
