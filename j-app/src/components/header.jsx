@@ -9,7 +9,7 @@ const Header = () => {
                 <Link to="/" className="logo-text">Juliette Valverde</Link>
             </div>
         
-            <nav className="nav-links">
+            <nav className="nav-links font-['Montserrat']">
                 <NavLink to="/experience">Experience</NavLink>
                 <NavLink to="/resume">Resume</NavLink>
                 <NavLink to="/contact">Contact</NavLink>

@@ -5,7 +5,7 @@ import "../styles/home.css";
 function contact() {
   return (
     <div className="min-h-screen bg-base-200 pb-20 flex flex-col">
-      <div className="about-content w-full bg-[#2038ae] text-white pt-24 pb-32 px-4 flex flex-col items-center">
+      <div className="about-content w-full text-white pt-24 pb-32 px-4 flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl mb-4">Contact Me!</h1>
         <p className="about-subtitle text-lg">Whether it's a question, a new opportunity, or just to say hello, I'm here to help.</p>
       </div>
