@@ -1,34 +1,22 @@
 import React from "react";
 import "../styles/home.css"; 
-import profilePic from "../assets/juliette.JPEG";
 import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
     <> 
 
-    <div className="flex flex-row items-center w-full min-h-screen">
-      <div className="flex-1 flex p-4 scale-75">
-        <div className="mockup-phone border-[#AA336A]">
-          <div className="mockup-phone-camera"></div>
-          <div className="mockup-phone-display">
-            <img alt="wallpaper" src={profilePic} />
-          </div>
-        </div>
-      </div>
+    <div className="flex flex-row justify-center w-full min-h-screen">
 
-      <div className="flex flex-col">
-        <div className="status-tag text-center pl-8">
-          HOUSTON, TX • OPEN TO OPPORTUNITIES
+      <div className="flex flex-col items-center">
+        <div className="status-tag text-center pt-32">
+          MULTIMEDIA PRODUCTION INTERN @ NASA JSC
         </div>
 
-        <div className="flex-1 flex top-1/3 text-9xl text-center font-bold pr-24 italic hover-woosh">
+        <div className="flex-1 flex top-1/3 text-9xl text-center font-bold italic hover-woosh">
           <h1>JULIETTE<br />VALVERDE</h1>
         </div>
 
-        <div className="status-tag pt-9 text-center pr-16">
-          MULTIMEDIA PRODUCTION INTERN @ NASA JSC
-        </div>
       </div>
 
     </div>
@@ -101,7 +89,7 @@ function Home() {
       </div>
 
       <section className="about-content">
-          <div className="bg-base-200 flex flex-col">
+          <div className="flex flex-col">
             <div className="w-full text-white py-16 px-4 flex flex-col items-center">
               <h1>About Me</h1>
               <p className="about-subtitle px-32 bg-AA336A">

@@ -32,7 +32,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 1.5rem;
 }
 
 .status-tag .line {
@@ -71,12 +70,11 @@
 }
 
 .about-subtitle {
-  font-size: 1.rem;
+  font-size: 1.5rem;
   color: #AA336A;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
-
 
 .badges {
   display: flex;
