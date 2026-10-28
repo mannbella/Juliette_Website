@@ -27,7 +27,7 @@
 }
 
 .status-tag {
-  font-size: 2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 1px;
   color: #AA336A;
@@ -39,7 +39,7 @@
 .status-tag .line {
   width: 30px;
   height: 2px;
-  background-color: #2038ae;
+  background-color: #AA336A;
 }
 
 .headshot-content h1 {
@@ -58,13 +58,12 @@
 
 .subtitle {
   font-size: 1.1rem;
-  color: #555;
+  color: #AA336A;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
 
 .about-content h1 {
-  font-family: 'Playfair Display', serif;
   font-size: 4.5rem;
   line-height: 1.1;
   margin: 0 0 1rem 0;
@@ -87,7 +86,7 @@
 
 .badge {
   padding: 6px 14px;
-  border: 1px solid #2038ae;
+  border: 1px solid #AA336A;
   border-radius: 20px;
   font-size: 0.85rem;
   color: #555;
@@ -118,7 +117,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid #2038ae;
+  border: 1px solid #AA336A;
   background: white;
   color: #333;
   transition: all 0.2s;
@@ -126,21 +125,21 @@
 }
 
 .btn:hover {
-  background: #f5f5f5;
+  background: #f0a1c6;
 }
 
 .btn.primary {
-  background-color: #2038ae;
+  background-color: #AA336A;
   color: white;
   border: none;
 }
 
 .btn.primary:hover {
-  background-color: #2d4ef3;
+  background-color: #570f31;
 }
 
 .btn.secondary:hover {
-  background-color: #2d4ef3;
+  background-color: #AA336A;
 }
 
 .wrapper h1 {

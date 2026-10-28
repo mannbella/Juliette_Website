@@ -9,12 +9,25 @@ import "./styles/home.css";
 
 const fillerStyle = { padding: "100px 20px", textAlign: "center", minHeight: "60vh" };
 
+function conditHeader() {
+  const loc = useLocation();
+
+  if (loc.pathname === "/")
+    return null;
+
+  return (
+    <header className="bg-base-200 px-6 py-4 flex items-center border-b border-base-300 w-full">
+          <Header /> 
+        </header>
+  );
+}
+
 function App() {
   return (
     <div className="min-h-screen w-full flex flex-col text-base-content bg-base-100">
       <BrowserRouter>
         
-        <header className="bg-base-200 px-6 py-4 flex items-center border-b border-base-300 w-full">
+        <header className="absolute top-0 w-full z-50 bg-base-200/80 backdrop-blur-md px-6 py-4 flex items-center border-b border-base-300">
           <Header /> 
         </header>
 

@@ -1,5 +1,4 @@
 import React, {useRef} from "react";
-import { NavLink, Link } from "react-router-dom";
 import "../styles/home.css"; 
 import emailjs from '@emailjs/browser';
 
